@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #efeae3;
+  --font-light: font300, sans-serif;
+  --font-medium: font500, sans-serif;
+}
+
+@font-face {
+  font-family: sun-mediu;
+  src: url(/fonts/NeueHaasDisplay-Mediu.ttf);
+}
+
+@font-face {
+  font-family: sun-roman;
+  src: url(/fonts/NeueHaasDisplay-Roman.ttf);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #ff9731 0%, #fe340a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+body {
+  background-color: var(--color-background);
+  overflow-x: hidden;
+}
+
+html,
+.custom-scrollbar {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+.custom-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hero1 {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  position: absolute;
+  background-color: #fe330a;
+  filter: blur(20px);
+}
+
+.hero2 {
+  height: 40vw;
+  width: 40vw;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #fe330a;
+  filter: blur(35px);
+  animation: anime2 5s linear infinite alternate;
+  /* background-color: black; */
+}
+
+.hero3 {
+  height: 40vw;
+  width: 40vw;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #fe330a;
+  /* background-color: black; */
+  filter: blur(35px);
+  animation: anime1 5s 3s linear infinite alternate;
+}
+
+@keyframes anime1 {
+  from {
+    transform: translate(55%, -7%);
+  }
+
+  to {
+    transform: translate(60%, 10%);
+  }
+}
+
+@keyframes anime2 {
+  from {
+    transform: translate(5%, -7%);
+  }
+
+  to {
+    transform: translate(-25%, 10%);
+  }
+}
+
+.p-hero {
+  filter: blur(20px);
+}
+
+.p-hero1 {
+  filter: blur(30px);
+  animation: anime3 6s linear infinite alternate;
+}
+
+@keyframes anime3 {
+  from {
+    transform: translate(10%, -20%);
+  }
+
+  to {
+    transform: translate(-20%, 10%);
+  }
+}
+
+.elem {
+  transition: all ease-in-out 0.2s;
+}
+
+.main-list:hover .elem {
+  top: 0;
+}
+
+.home-list:hover .imgdiv {
+  opacity: 1;
+  height: 30vw;
+}
+
+.imgdiv {
+  transition: all 0.1s ease-in-out;
+}
+
+@keyframes rotate1 {
+  from {
+    rotate: 80deg;
+  }
+
+  to {
+    rotate: 70deg;
+  }
+}
+
+@keyframes rotate2 {
+  from {
+    rotate: -70deg;
+  }
+
+  to {
+    rotate: -60deg;
+  }
+}
+
+.footer-shape1 {
+  animation: rotate1 3s linear infinite alternate;
+}
+
+.footer-shape2 {
+  animation: rotate2 4s linear infinite alternate;
+}

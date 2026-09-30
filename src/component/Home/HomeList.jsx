@@ -6,7 +6,7 @@ const HomeList = () => {
   return (
     <div className="home-list relative h-full w-full flex flex-col">
       <div
-        className="imgdiv fixed opacity-0 pointer-events-none z-50 left-250 top-60 rounded-3xl h-[0] w-[24vw] bg-cover bg-center"
+        className="imgdiv fixed opacity-0 pointer-events-none z-50 left-200 top-35 rounded-3xl h-[0] w-[24vw] bg-cover bg-center"
         style={{ backgroundImage: `url(${hoverImage})` }}
       ></div>
       <div

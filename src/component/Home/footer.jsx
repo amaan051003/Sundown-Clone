@@ -23,13 +23,13 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-[12vw] mx-[2vw] z-20 flex flex-col justify-center w-full ">
+        <div className="mt-[20vw] mx-[2vw] z-20 flex flex-col justify-center w-full ">
           <img
             className="z-30 border-b border-[#504A45] pb-10 "
             src="/footerlogo.svg"
             alt=""
           />
-          <div className="flex justify-center gap-[20vw] text-2xl text-white mt-10">
+          <div className="flex justify-center gap-[21vw] text-[18px] text-white mt-7">
             <h5>Copyright © Sundown Studio</h5>
             <h5>Brooklyn, NY</h5>
             <h5>Instagram</h5>
